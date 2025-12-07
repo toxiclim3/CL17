@@ -1,0 +1,227 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	
+}
+
+body
+{
+	background: #fff5e6;
+}
+
+.nav-link a
+{
+	color: gray;
+}
+
+/* .accordion-button
+{
+	background: #8CBEB2;
+}
+
+.accordion-button:not(.collapsed)
+{
+	background: #F3B562;
+}
+
+.accordion-body strong
+{
+	color: #F06060;
+} */
+
+.center
+{
+	position: fixed;
+	z-index: 100;
+	top: 1em;
+	left: 1em;
+
+	width: 100vw;
+
+
+	display: flex;
+	justify-content: start;
+}
+
+.nav
+{
+	position: fixed;
+	/* width: 80vw; */
+	z-index: 100;
+
+	margin: 0 auto;
+	padding:0 1em;
+
+	align-items: center;
+	justify-content: flex-start;
+
+	background-color: bisque;
+	border-radius:20px 40px ;
+
+	
+}
+
+.nav a
+{
+	color: bisque;
+	text-decoration: none;
+
+	padding: 1em;
+	background-color: brown;
+
+	border-radius: 40px 20px;
+}
+
+.nav a:hover
+{
+	cursor: pointer;
+	color: chocolate;
+	background-color: #3f1811;
+}
+
+.nav .img
+{
+	width: 5rem;
+	height: auto;
+}
+
+.nav .img img
+{
+	width: 100%;
+}
+
+
+.welcome
+{
+	position: absolute;
+	top: 20vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+
+	z-index: 2;
+
+	background-color: bisque;
+	border-radius:20px 40px ;
+	padding: 2em;
+
+	width: 60vw;
+
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+ .carousel-inner img
+{
+	height:100vh;
+	object-fit: cover;
+}
+
+
+.cards-sect
+{
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.cards-sect h1
+{
+	margin: 0;
+}
+
+.cards
+{
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.cards .card
+{
+	height: 100%;
+
+	background: bisque;
+	border: none;
+
+	border-radius: 20px 40px;
+}
+
+.cards .card .card-body
+{
+	display: grid;
+	justify-items: center;
+	align-items: center;
+
+	grid-template-rows: min-content 1fr min-content;
+}
+
+.cards .card .card-body .card-text
+{
+	align-self: start;
+}
+
+.cards .card a
+{
+	--bs-btn-bg: brown;
+	--bs-btn-hover-bg:#3f1811;
+	--bs-btn-hover-color:chocolate;
+	border: none;
+
+	padding: 0.5rem 1rem;
+
+	align-self: end;
+}
+
+footer
+{
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 1110px ) 
+{
+	.cards
+	{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 690px ) 
+{
+	.center
+	{
+		left: 0;
+		justify-content: center;
+	}
+	.cards
+	{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 450px ) 
+{
+	
+
+	.nav
+	{
+		justify-content: center;
+	}
+
+	.nav li:nth-child(1)
+	{
+		display: none;
+	}
+}
